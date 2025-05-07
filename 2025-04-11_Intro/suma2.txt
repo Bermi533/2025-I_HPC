@@ -1,0 +1,9 @@
+Data written to sums_data.csv.
+You can now plot the columns relDiff1 and relDiff2 vs. N.
+Example with gnuplot:
+
+   set logscale y
+   plot "sums_data.csv" using 1:5 with lines title 'RelDiff1', \
+        "sums_data.csv" using 1:6 with lines title 'RelDiff2'
+
+Or use your favorite plotting tool!
